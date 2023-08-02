@@ -1,0 +1,71 @@
+/* Estilos para a animação de zoom */
+.zoom-effect {
+    transition: transform 0.3s;
+}
+
+.zoom-effect:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para o cabeçalho */
+#topop {
+    text-align: center;
+}
+
+#topop img {
+    max-width: 100%;
+    height: auto;
+}
+
+#nrfoto {
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+#nrfoto img {
+    max-width: 100%;
+    height: auto;
+}
+
+#nrfoto .text-content {
+    text-align: left;
+    padding-top: 10px;
+}
+
+#nrfoto h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#nrfoto p {
+    text-align: left;
+    margin: 0;
+}
+
+#nrfoto span {
+    display: block;
+    font-style: italic;
+    color: gray;
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+/* Estilos para o conteúdo */
+#teste {
+    text-align: center;
+    margin-top: 50px;
+}
+
+div.box {
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+#mandarinl {
+    text-align: center;
+    margin-top: 50px;
+}
