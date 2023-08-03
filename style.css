@@ -1,71 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+#container_page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header,
+main,
+footer {
+    max-width: 600px;
+}
+
+.container_figure {
+    gap: 2em;
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+}
+
+.container_figure p {
+    font-size: .9em;
+    margin: 5px 0;
+}
+
+.container_figure small {
+    color: gray;
+}
+
+.container_figure span {
+    font-style: italic
+}
+
+.container_wrap {
+    gap: 1em;
+    display: flex;
+}
+
+.container_wrap img {
+    height: 200px;
+}
+
+#container_footer {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#container_footer img {
+    margin-bottom: 15px;
+}
+
+#container_footer p {
+    font-size: .8em;
+}
+
+.border_nrf,
+.border_nba,
+.border_whats {
+    width: 50%;
+    border: 2px solid transparent;
+}
+
+.border_nrf {
+    border-image: linear-gradient(45deg, red, blue) 1;
+}
+
+.border_nba {
+    border-image: linear-gradient(45deg, rgba(0, 0, 255, 0.4), blue) 1;
+}
+
+.border_whats {
+    border-image: linear-gradient(45deg, rgba(0, 128, 0, 0.4), green) 1;
+}
+
 /* Estilos para a animação de zoom */
-.zoom-effect {
+.zoom_effect {
+    color: black;
+    text-decoration: none;
     transition: transform 0.3s;
 }
 
-.zoom-effect:hover {
-    transform: scale(1.1);
+.zoom_effect:hover {
+    transform: scale(1.01);
 }
 
-/* Estilos para o cabeçalho */
-#topop {
-    text-align: center;
-}
-
-#topop img {
-    max-width: 100%;
-    height: auto;
-}
-
-#nrfoto {
-    text-align: center;
-    margin-top: 20px;
-    position: relative;
-}
-
-#nrfoto img {
-    max-width: 100%;
-    height: auto;
-}
-
-#nrfoto .text-content {
-    text-align: left;
-    padding-top: 10px;
-}
-
-#nrfoto h1 {
-    font-size: 24px;
-    margin: 0;
-}
-
-#nrfoto p {
-    text-align: left;
-    margin: 0;
-}
-
-#nrfoto span {
-    display: block;
-    font-style: italic;
-    color: gray;
-    font-size: 14px;
-    margin-top: 15px;
-}
-
-/* Estilos para o conteúdo */
-#teste {
-    text-align: center;
-    margin-top: 50px;
-}
-
-div.box {
-    width: 100%;
-    max-width: 300px;
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-}
-
-#mandarinl {
-    text-align: center;
-    margin-top: 50px;
+@media screen and (max-width: 450px) {
+    .container_wrap {
+        flex-wrap: wrap;
+    }
 }
